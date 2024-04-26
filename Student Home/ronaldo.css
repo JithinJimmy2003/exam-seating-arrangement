@@ -107,7 +107,7 @@ body {
     flex-grow: 0; /* Prevent the container from growing */
     width: 400px; /* Set the desired width */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
     backdrop-filter: blur(10px); /* Apply a blur effect */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     display: flex;
@@ -134,7 +134,7 @@ body {
   }
   
   .bullet-point {
-    background-color: rgba(255, 255, 255, 0.3);  /* Add background color for visibility */
+    background-color: rgba(255, 255, 255, 0.4);  /* Add background color for visibility */
     padding: 30px; /* Add padding for spacing */
     width: 340px;
     border-radius: 20px;
