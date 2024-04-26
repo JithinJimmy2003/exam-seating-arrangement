@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Images/Schladming\,-Austria-5120x2880.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+.text-info h1, .text-info h2, .text-info h3 {
+    font-size: 16px; /* Decreased font size */
+    font-style: italic;
+    margin: 5px 0;
+}
