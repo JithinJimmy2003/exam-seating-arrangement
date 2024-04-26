@@ -11,7 +11,7 @@ body {
 .header {
     background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     backdrop-filter: blur(10px); /* Apply a blur effect */
@@ -56,14 +56,36 @@ body {
     margin: 5px 0;
 }
 
-.grid-container {
+.above-main-content {
+    margin-bottom: 0; 
+    display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+    margin-top: 40px;/* Add space between the above container and main content */
+    margin-left: 600px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Space between the grid container and the right container */
+    margin-left: 430px; /* Add space on the left of the grid container */
+    margin-right: 20px; /* Add space on the right of the right container */
+  }  
+
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 0fr);
+    grid-template-columns: repeat(5, 100px); /* Adjust column width as needed */
     grid-auto-rows: 100px; /* Adjust height as needed */
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   
   .grid-item {
@@ -71,9 +93,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.6); 
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    height: 100px; 
   }
   
   .grid-item i {
@@ -81,15 +103,54 @@ body {
   }
   
 
-   /* Style for the container on the right */
-   .right-container {
-    flex-grow: 1; /* Allow the container to grow to fill available space */
-    margin-left: auto; /* Push the container to the right */
-    padding: 20px; /* Add padding for content */
+  .right-container {
+    flex-grow: 0; /* Prevent the container from growing */
+    width: 400px; /* Set the desired width */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items vertically to the top */
+    margin-top: 30px;
+    border-radius: 30px;
+    align-items: center; /* Align items horizontally to the center */
   }
   
-  .important-message {
-    font-size: 24px;
+  .important-heading {
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px; /* Add some space below the heading */
+    margin-bottom: 40px;
+    justify-content: flex-start; /* Align items vertically to the top */
+    align-items: center; 
+}
+  
+    
+  
+.bullet-container {
+    margin-bottom: 10px; /* Add some space between bullet points */
+    
   }
+  
+  .bullet-point {
+    background-color: rgba(255, 255, 255, 0.3);  /* Add background color for visibility */
+    padding: 30px; /* Add padding for spacing */
+    width: 340px;
+    border-radius: 20px;
+    border: 2px solid #fff2f2; /* Add border for separation */ /* Add border radius for rounded corners */
+  }
+
+  .bullet-container {
+  margin-bottom: 10px; /* Add some space between bullet point containers */
+}
+
+.bullet-points {
+  list-style-type: disc; /* Set bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.bullet-points li {
+  margin-left: 20px; /* Add some indentation */
+}
