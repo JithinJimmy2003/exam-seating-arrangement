@@ -21,12 +21,23 @@ body {
 
 #date-time {
     position: absolute; /* Position the date-time container */
-    top: 0; /* Align to the top */
+    top: 50%; /* Align to the middle vertically */
+    transform: translateY(-50%); /* Center vertically */
     right: 20px; /* Distance from the right */
     color: #000000;
+    z-index: 1; /* Ensure it's on top of other elements */
   }
 
-  
+  #date {
+    font-size: 20px; /* Adjust font size for date */
+  }
+
+  #time {
+    font-size: 25px; /* Increase font size for time */
+    text-align: center; /* Center the text horizontally */
+  }
+
+
 .profile-pic {
     width: 100px;
     height: 100px;

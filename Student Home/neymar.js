@@ -1,6 +1,7 @@
-// Get the current date and time and update the content of the designated element
+// Get the current date and time and update the content of the designated elements
 function updateDateTime() {
-    const dateTimeContainer = document.getElementById('date-time');
+    const dateContainer = document.getElementById('date');
+    const timeContainer = document.getElementById('time');
     const now = new Date();
     
     const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -9,7 +10,8 @@ function updateDateTime() {
     const dateString = now.toLocaleDateString('en-US', dateOptions);
     const timeString = now.toLocaleTimeString('en-US', timeOptions);
   
-    dateTimeContainer.textContent = dateString + ' ' + timeString;
+    dateContainer.textContent = dateString;
+    timeContainer.textContent = timeString;
   }
   
   // Update date and time every second
