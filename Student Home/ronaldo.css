@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+
 .header {
     background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
     padding: 20px;
@@ -13,7 +16,17 @@ body {
     align-items: center;
     backdrop-filter: blur(10px); /* Apply a blur effect */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: relative; /* Add relative positioning to the header */
 }
+
+#date-time {
+    position: absolute; /* Position the date-time container */
+    top: 0; /* Align to the top */
+    right: 20px; /* Distance from the right */
+    color: #000000;
+  }
+
+  
 .profile-pic {
     width: 100px;
     height: 100px;
