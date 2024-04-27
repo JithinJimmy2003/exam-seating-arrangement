@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Images/Schladming\,-Austria-5120x2880.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: relative; /* Add relative positioning to the header */
+}
+
+#date-time {
+    position: absolute; /* Position the date-time container */
+    top: 50%; /* Align to the middle vertically */
+    transform: translateY(-50%); /* Center vertically */
+    right: 20px; /* Distance from the right */
+    color: #000000;
+    z-index: 1; /* Ensure it's on top of other elements */
+  }
+
+  #date {
+    font-size: 20px; /* Adjust font size for date */
+  }
+
+  #time {
+    font-size: 25px; /* Increase font size for time */
+    text-align: center; /* Center the text horizontally */
+  }
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 50%; /* Make the image display in a circle */
+    margin-right: 20px;
+
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+.text-info h1, .text-info h2, .text-info h3 {
+    font-size: 16px; /* Decreased font size */
+    font-style: italic;
+    margin: 5px 0;
+}
