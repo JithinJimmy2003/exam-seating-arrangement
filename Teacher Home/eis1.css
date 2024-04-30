@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/Images/Schladming\,-Austria-5120x2880.jpg'); 
+    background-image: url('/exam-seating-arrangement/Images/Schladming\,-Austria-5120x2880.jpg'); 
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -58,9 +58,9 @@ body {
 
 .profile-container {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
     backdrop-filter: blur(10px); /* Apply a blur effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow *//* Align items vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     align-items: center;
     margin-left: 150px; /* Adjust as needed */
     margin-top: 200px;
@@ -73,13 +73,13 @@ body {
     width: 50px; /* Adjust as needed */
     height: 50px; /* Adjust as needed */
     border-radius: 50%; /* Make it circular */
-    overflow: hidden; /* Hide overflowing content */
-    margin-right: 10px;
+    margin-left: 30px;
     margin-top: 0px; /* Add space between profile pic and text */
   }
   
   .assignment-container {
     text-align: left; /* Align text to the left */
+    margin-left: 40px;
   }
   
   .assignment-container p {
@@ -90,6 +90,7 @@ body {
   .right-container {
     flex-grow: 0; /* Prevent the container from growing */
     width: 400px; /* Set the desired width */
+    height: 500px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
     backdrop-filter: blur(10px); /* Apply a blur effect */
@@ -97,7 +98,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align items vertically to the top */
-    margin-top: 30px;
+    margin-top: -380px;
+    margin-left: 1050px;
     border-radius: 30px;
     align-items: center; /* Align items horizontally to the center */
   }
