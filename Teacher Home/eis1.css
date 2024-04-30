@@ -70,8 +70,8 @@ body {
   }
   
   .profile-pic {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
     border-radius: 50%; /* Make it circular */
     margin-left: 30px;
     margin-top: 0px; /* Add space between profile pic and text */
@@ -84,6 +84,7 @@ body {
   
   .assignment-container p {
     margin: 0; /* Remove default margins */
+    font-size: 18px;
   }
   
 
