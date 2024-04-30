@@ -18,3 +18,10 @@ function updateDateTime() {
   
   // Initial call to display date and time immediately
   updateDateTime();
+
+  const optionsButton = document.querySelector('.options-button');
+  const optionsMenu = document.querySelector('.options');
+
+  optionsButton.addEventListener('click', () => {
+    optionsMenu.classList.toggle('show');
+  });

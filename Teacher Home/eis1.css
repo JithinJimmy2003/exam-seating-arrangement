@@ -86,6 +86,48 @@ body {
     margin: 0; /* Remove default margins */
     font-size: 18px;
   }
+
+  .options-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .options {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .options.show {
+    display: block;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .option img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .option-name {
+    font-size: 16px;
+  }
   
 
   .right-container {
