@@ -73,6 +73,7 @@ body {
     width: 80px; /* Adjust as needed */
     height: 80px; /* Adjust as needed */
     border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the entire area */
     margin-left: 30px;
     margin-top: 0px; /* Add space between profile pic and text */
   }
@@ -100,16 +101,16 @@ body {
   }
   .options {
     position: absolute;
-    bottom: 100%;
-    right: 0;
-    width: 200px;
+    top: calc(100% + 10px);
+    right: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: none;
     padding: 10px;
     box-sizing: border-box;
+    z-index: 1;
   }
   .options.show {
     display: block;
@@ -123,6 +124,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the entire area */
     margin-right: 10px;
   }
   .option-name {

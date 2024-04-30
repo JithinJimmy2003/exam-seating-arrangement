@@ -19,6 +19,10 @@ function updateDateTime() {
   // Initial call to display date and time immediately
   updateDateTime();
 
+  function showMessage() {
+    alert("Your request has been sent.");
+  }
+
   const optionsButton = document.querySelector('.options-button');
   const optionsMenu = document.querySelector('.options');
 
