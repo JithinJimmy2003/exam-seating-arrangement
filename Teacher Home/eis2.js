@@ -19,13 +19,16 @@ function updateDateTime() {
   // Initial call to display date and time immediately
   updateDateTime();
 
-  function showMessage() {
-    alert("Your request has been sent.");
+  function toggleOptions() {
+    var options = document.getElementById("options");
+    options.classList.toggle("show");
   }
 
-  const optionsButton = document.querySelector('.options-button');
-  const optionsMenu = document.querySelector('.options');
-
-  optionsButton.addEventListener('click', () => {
-    optionsMenu.classList.toggle('show');
-  });
+  function showMessage(optionName) {
+    var popup = document.getElementById("popup");
+    popup.textContent = "Your request for " + optionName + " has been sent.";
+    popup.style.display = "block";
+    setTimeout(function() {
+      popup.style.display = "none";
+    }, 2000); // Close the popup after 2 seconds
+  }

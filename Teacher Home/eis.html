@@ -30,21 +30,23 @@
           <p><strong>You have been assigned to:</strong></p>
           <p><strong>Room 404</strong></p>
         </div>
-        <button class="options-button">Options</button>
-        <div class="options">
-          <div class="option">
+
+
+        <button class="options-button" onclick="toggleOptions()">Assign Duty To:</button>
+        <div class="options" id="options">
+          <div class="option" onclick="showMessage('Dr. Vince Paul')">
             <img src="/exam-seating-arrangement/Images/vince.png" alt="Option 1">
             <div class="option-name">Dr. Vince Paul</div>
           </div>
-          <div class="option">
+          <div class="option" onclick="showMessage('Iris Jose')">
             <img src="/exam-seating-arrangement/Images/iris.png" alt="Option 2">
             <div class="option-name">Iris Jose</div>
           </div>
-          <div class="option">
+          <div class="option" onclick="showMessage('Hima Jose')">
             <img src="/exam-seating-arrangement/Images/hima.png" alt="Option 3">
             <div class="option-name">Hima Jose</div>
           </div>
-          <div class="option">
+          <div class="option" onclick="showMessage('Minnu Muthedan')">
             <img src="/exam-seating-arrangement/Images/minnu.png" alt="Option 4">
             <div class="option-name">Minnu Muthedan</div>
           </div>
@@ -62,6 +64,10 @@
         <div class="bullet-container">
           <div class="bullet-point">Message 3</div>
         </div>
+    </div>
+
+
+    <div class="popup" id="popup">
     </div>
       
     
