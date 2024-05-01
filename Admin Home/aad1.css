@@ -57,6 +57,46 @@ body {
 }
 
 
+.left-container {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 300px; /* Adjust container width as needed */
+  height: 170px; /* Adjust container height as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.date-options {
+  margin-top: 20px;
+}
+
+.date-options h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.option input[type="date"] {
+  width: 100%;
+  padding: 7px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.option span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
 
 .main-content {
   display: flex;
@@ -120,7 +160,7 @@ body {
 
 .options-container h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .option {
@@ -131,7 +171,7 @@ body {
 .option select {
   width: 100%;
   padding: 8px;
-  border-radius: 5px;
+  border-radius: 30px;
   border: 1px solid #ccc;
   border-radius: 30px;
 }
@@ -141,3 +181,15 @@ body {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+
+.shuffle-btn {
+  position: absolute;
+  bottom: 20px; /* Adjust distance from bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px; /* Increase border-radius for more curved edges */
+  padding: 10px 20px; /* Increase padding for a bigger button */
+  font-size: 1.2rem; /* Increase font size for bigger text */
+}
+
