@@ -1,3 +1,20 @@
+
+// Import Axios if you're using a module-based JavaScript environment
+// import axios from 'axios';
+
+// Make HTTP request using Axios
+axios.get('https://api.example.com/data')
+  .then(function (response) {
+    // Handle success, response.data contains the response data
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    // Handle error
+    console.error(error);
+  });
+
+
+
 function updateDateTime() {
     const dateContainer = document.getElementById('date');
     const timeContainer = document.getElementById('time');
@@ -29,3 +46,4 @@ function updateDateTime() {
       departmentOptions.style.display = "none"; // Hide options if no department is selected
     }
   });
+  
