@@ -61,7 +61,7 @@ body {
   position: relative;
   top: 30px;
   left: 30px;
-  width: 300px; /* Adjust container width as needed */
+  width: 340px; /* Adjust container width as needed */
   height: 170px; /* Adjust container height as needed */
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
   backdrop-filter: blur(10px); /* Apply a blur effect */
@@ -96,12 +96,56 @@ body {
   font-weight: bold;
 }
 
+.message-container {
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.message-container h2 {
+  margin: 0;/* Add some space below the h3 heading */
+  text-align: center;
+}
+
+.message img {
+  width: 50px; /* Adjust profile picture size as needed */
+  height: 50px; /* Adjust profile picture size as needed */
+  border-radius: 50%; /* Make profile picture round */
+  margin-right: 10px; /* Add some space between picture and message */
+  object-fit: cover;
+}
+
+.message-content p {
+  margin: 0;
+}
+
+.message-actions {
+  margin-top: 20px; /* Add margin to create space between message and buttons */
+}
+
+.message-actions button {
+  margin-right: -60px; /* Add margin to the right of the "Approve" button */
+  margin-left: 102px; /* Add margin to the left of the "Reject" button */
+
+}
+
 
 
 .main-content {
   display: flex;
   justify-content: space-between; /* Space between the grid container and the right container */
-  margin-left: 430px; /* Add space on the left of the grid container */
+  margin-left: 485px; /* Add space on the left of the grid container */
   margin-right: 20px; /* Add space on the right of the right container */
 }  
 
@@ -112,7 +156,7 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: -464px;
 }
 
 .grid-item {
@@ -135,8 +179,8 @@ body {
 
 .container {
   position: relative;
-  top: 20px;
-  right: 40px;
+  top: -470px;
+  right: 30px;
   width: 350px; /* Adjust container width as needed */
   height: 650px; /* Adjust container height as needed */
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
