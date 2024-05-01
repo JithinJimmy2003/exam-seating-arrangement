@@ -18,3 +18,14 @@ function updateDateTime() {
   
   // Initial call to display date and time immediately
   updateDateTime();
+
+
+  document.getElementById("department").addEventListener("change", function() {
+    var selectedValue = this.value;
+    var departmentOptions = document.getElementById("department-options");
+    if (selectedValue !== "") {
+      departmentOptions.style.display = "block"; // Show options when a department is selected
+    } else {
+      departmentOptions.style.display = "none"; // Hide options if no department is selected
+    }
+  });

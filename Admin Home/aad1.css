@@ -10,12 +10,12 @@ body {
 
 .header {
     background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     border-radius: 30px;
     display: flex;
-    align-items: center;
-    backdrop-filter: blur(10px); /* Apply a blur effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    align-items: center;/* Add a subtle shadow */
     position: relative; /* Add relative positioning to the header */
 }
 
@@ -63,8 +63,6 @@ body {
   justify-content: space-between; /* Space between the grid container and the right container */
   margin-left: 430px; /* Add space on the left of the grid container */
   margin-right: 20px; /* Add space on the right of the right container */
-  background-color: rgba(255, 255, 255, 0.6); 
-  border-radius: 10px;
 }  
 
 .grid-container {
@@ -93,4 +91,47 @@ body {
 
 .grid-item1 {
   font-size: 24px; /* Adjust icon size as needed */
+}
+
+.container {
+  position: relative;
+  top: 20px;
+  right: 40px;
+  width: 350px; /* Adjust container width as needed */
+  height: 550px; /* Adjust container height as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.options-container {
+  margin-top: -20px;
+}
+
+.options-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.option {
+  margin-bottom: 20px;
+
+}
+
+.option select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.option span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
