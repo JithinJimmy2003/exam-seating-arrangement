@@ -56,12 +56,26 @@ body {
     margin: 5px 0;
 }
 
+.exam-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0px;
+  border-radius: 30px;
+  width: 230px; /* Adjust width as needed */
+  text-align: center;
+  margin-left: 1180px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
 .above-main-content {
     margin-bottom: 0; 
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    margin-top: -510px;/* Add space between the above container and main content */
+    margin-top: -600px;/* Add space between the above container and main content */
     margin-left: 600px;
     background-color: rgba(255, 255, 255, 0.6); 
     width: 200px;
@@ -74,7 +88,7 @@ body {
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    margin-top: -40px;/* Add space between the above container and main content */
+    margin-top: -38px;/* Add space between the above container and main content */
     margin-left: 72px;
     background-color: rgba(255, 255, 255, 0.6); 
     width: 300px;
