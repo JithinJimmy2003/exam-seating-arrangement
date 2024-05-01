@@ -55,3 +55,42 @@ body {
     font-style: italic;
     margin: 5px 0;
 }
+
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Space between the grid container and the right container */
+  margin-left: 430px; /* Add space on the left of the grid container */
+  margin-right: 20px; /* Add space on the right of the right container */
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 10px;
+}  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px); /* Adjust column width as needed */
+  grid-auto-rows: 100px; /* Adjust height as needed */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 10px;
+  width: 100px; /* Adjust width as needed */
+  height: 100px; 
+}
+
+.grid-item i {
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.grid-item1 {
+  font-size: 24px; /* Adjust icon size as needed */
+}
