@@ -65,7 +65,8 @@
       <div class="container">
         <div class="options-container">
           <h2>Generate</h2>
-          <div class="option">
+          <div class="option-group">
+            <div class="option" id="department-options">
             <span>Choose Department:</span>
             <select name="department" id="department">
               <option value="dept1">None</option>
@@ -87,11 +88,13 @@
               <option value="sem4">Fourth Year</option>
             </select>
           </div>
+        </div>
           <!-- Add more options here if needed -->
 
-          <div class="option" id="semester-options">
+          <div class="option-group">
+            <div class="option" id="department-options">
             <span>Choose Department:</span>
-            <select name="semester" id="semester">
+            <select name="department" id="department">
               <option value="dept1">None</option>
               <option value="dept1">CSE</option>
               <option value="dept2">CE</option>
@@ -111,29 +114,32 @@
               <option value="sem4">Fourth Year</option>
             </select>
           </div>
+        </div>
 
-          <div class="option" id="semester-options">
-            <span>Choose Department:</span>
-            <select name="semester" id="semester">
-              <option value="dept1">None</option>
-              <option value="dept1">CSE</option>
-              <option value="dept2">CE</option>
-              <option value="dept3">ME</option>
-              <option value="dept4">EEE</option>
-              <option value="dept5">EC</option>
-            </select>
-          </div>
+        <div class="option-group">
+          <div class="option" id="department-options">
+          <span>Choose Department:</span>
+          <select name="department" id="department">
+            <option value="dept1">None</option>
+            <option value="dept1">CSE</option>
+            <option value="dept2">CE</option>
+            <option value="dept3">ME</option>
+            <option value="dept4">EEE</option>
+            <option value="dept5">EC</option>
+          </select>
+        </div>
 
-          <div class="option" id="semester-options">
-            <span>Choose Year:</span>
-            <select name="semester" id="semester">
-              <option value="">None</option>
-              <option value="sem1">First Year</option>
-              <option value="sem2">Second Year</option>
-              <option value="sem3">Third Year</option>
-              <option value="sem4">Fourth Year</option>
-            </select>
-          </div>
+        <div class="option" id="semester-options">
+          <span>Choose Year:</span>
+          <select name="semester" id="semester">
+            <option value="">None</option>
+            <option value="sem1">First Year</option>
+            <option value="sem2">Second Year</option>
+            <option value="sem3">Third Year</option>
+            <option value="sem4">Fourth Year</option>
+          </select>
+        </div>
+      </div>
 
 
 

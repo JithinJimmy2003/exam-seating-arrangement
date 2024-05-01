@@ -98,7 +98,7 @@ body {
   top: 20px;
   right: 40px;
   width: 350px; /* Adjust container width as needed */
-  height: 550px; /* Adjust container height as needed */
+  height: 650px; /* Adjust container height as needed */
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
   backdrop-filter: blur(10px); /* Apply a blur effect */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -107,6 +107,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+.option-group {
+  margin-bottom: 70px; /* Add margin between option groups */
+}
+
 
 .options-container {
   margin-top: -20px;
@@ -118,7 +124,7 @@ body {
 }
 
 .option {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
 }
 
