@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url('/exam-seating-arrangement/Images/avinko.jpg'); 
+    background-image: url('/exam-seating-arrangement/frontend/Images/avinko.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
