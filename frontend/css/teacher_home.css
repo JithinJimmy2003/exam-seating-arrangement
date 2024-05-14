@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/exam-seating-arrangement/frontend/Images/Schladming\,-Austria-5120x2880.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: relative; /* Add relative positioning to the header */
+}
+
+#date-time {
+    position: absolute; /* Position the date-time container */
+    top: 50%; /* Align to the middle vertically */
+    transform: translateY(-50%); /* Center vertically */
+    right: 20px; /* Distance from the right */
+    color: #000000;
+    z-index: 1; /* Ensure it's on top of other elements */
+  }
+
+  #date {
+    font-size: 20px; /* Adjust font size for date */
+  }
+
+  #time {
+    font-size: 25px; /* Increase font size for time */
+    text-align: center; /* Center the text horizontally */
+  }
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 50%; /* Make the image display in a circle */
+    margin-right: 20px;
+
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+.text-info h1, .text-info h2, .text-info h3 {
+    font-size: 16px; /* Decreased font size */
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.profile-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    align-items: center;
+    margin-left: 150px; /* Adjust as needed */
+    margin-top: 200px;
+    width:500px;
+    height: 250px;
+    border-radius: 30px;
+  }
+  
+  .profile-pic {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-left: 30px;
+    margin-top: 0px; /* Add space between profile pic and text */
+  }
+  
+  .assignment-container {
+    text-align: left; /* Align text to the left */
+    margin-left: 40px;
+  }
+  
+  .assignment-container p {
+    margin: 0; /* Remove default margins */
+    font-size: 18px;
+  }
+
+  .options-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .options {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .options.show {
+    display: block;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .option img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-right: 10px;
+  }
+  .option-name {
+    font-size: 16px;
+  }
+  
+
+  .right-container {
+    flex-grow: 0; /* Prevent the container from growing */
+    width: 400px; /* Set the desired width */
+    height: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5) to change transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items vertically to the top */
+    margin-top: -380px;
+    margin-left: 1050px;
+    border-radius: 30px;
+    align-items: center; /* Align items horizontally to the center */
+  }
+  
+  .important-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    justify-content: flex-start; /* Align items vertically to the top */
+    align-items: center; 
+}
+  
+    
+  
+.bullet-container {
+    margin-bottom: 10px; /* Add some space between bullet points */
+    
+  }
+  
+  .bullet-point {
+    background-color: rgba(255, 255, 255, 0.4);  /* Add background color for visibility */
+    padding: 30px; /* Add padding for spacing */
+    width: 340px;
+    border-radius: 20px;
+    border: 2px solid #fff2f2; /* Add border for separation */ /* Add border radius for rounded corners */
+  }
+
+  .bullet-container {
+  margin-bottom: 10px; /* Add some space between bullet point containers */
+}
+
+.bullet-points {
+  list-style-type: disc; /* Set bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.bullet-points li {
+  margin-left: 20px; /* Add some indentation */
+}
+
+.popup {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    display: none;
+}

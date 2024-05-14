@@ -1,0 +1,67 @@
+body {
+      background-image: url('/exam-seating-arrangement/frontend/Images/avinko.jpg'); 
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Align items in column */
+      height: 100vh;
+    }
+
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value (0.5) to change transparency */
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      width: 550px;
+      max-width: 100%;
+      min-height: 300px;
+    }
+    
+
+    
+
+  
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: -40px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      margin-top: -60px;
+      display: flex;
+      justify-content: center;
+    }
+    li {
+      margin: 0 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+      padding: 20px 40px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center; /* Align icon and text vertically */
+    }
+    a:hover {
+      background-color: #f0f0f0;
+    }
+    .icon {
+        margin-right: 10px;
+        font-size: 20px; /* Increase icon size */
+}

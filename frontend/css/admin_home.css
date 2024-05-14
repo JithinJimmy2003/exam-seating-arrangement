@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/exam-seating-arrangement/frontend/Images/Schladming\,-Austria-5120x2880.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the alpha value (0.5) to change transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;/* Add a subtle shadow */
+    position: relative; /* Add relative positioning to the header */
+}
+
+#date-time {
+    position: absolute; /* Position the date-time container */
+    top: 50%; /* Align to the middle vertically */
+    transform: translateY(-50%); /* Center vertically */
+    right: 20px; /* Distance from the right */
+    color: #000000;
+    z-index: 1; /* Ensure it's on top of other elements */
+  }
+
+  #date {
+    font-size: 20px; /* Adjust font size for date */
+  }
+
+  #time {
+    font-size: 25px; /* Increase font size for time */
+    text-align: center; /* Center the text horizontally */
+  }
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 50%; /* Make the image display in a circle */
+    margin-right: 20px;
+
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+.text-info h1, .text-info h2, .text-info h3 {
+    font-size: 16px; /* Decreased font size */
+    font-style: italic;
+    margin: 5px 0;
+}
+
+
+.left-container {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 340px; /* Adjust container width as needed */
+  height: 170px; /* Adjust container height as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.date-options {
+  margin-top: 20px;
+}
+
+.date-options h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.option input[type="date"] {
+  width: 100%;
+  padding: 7px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.option span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.message-container {
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.message-container h2 {
+  margin: 0;/* Add some space below the h3 heading */
+  text-align: center;
+}
+
+.message img {
+  width: 50px; /* Adjust profile picture size as needed */
+  height: 50px; /* Adjust profile picture size as needed */
+  border-radius: 50%; /* Make profile picture round */
+  margin-right: 10px; /* Add some space between picture and message */
+  object-fit: cover;
+}
+
+.message-content p {
+  margin: 0;
+}
+
+.message-actions {
+  margin-top: 20px; /* Add margin to create space between message and buttons */
+}
+
+.message-actions button {
+  margin-right: -60px; /* Add margin to the right of the "Approve" button */
+  margin-left: 102px; /* Add margin to the left of the "Reject" button */
+
+}
+
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Space between the grid container and the right container */
+  margin-left: 485px; /* Add space on the left of the grid container */
+  margin-right: 20px; /* Add space on the right of the right container */
+}  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px); /* Adjust column width as needed */
+  grid-auto-rows: 100px; /* Adjust height as needed */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -464px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 10px;
+  width: 100px; /* Adjust width as needed */
+  height: 100px; 
+}
+
+.grid-item i {
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.grid-item1 {
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.container {
+  position: relative;
+  top: -470px;
+  right: 30px;
+  width: 350px; /* Adjust container width as needed */
+  height: 650px; /* Adjust container height as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value (0.5) to change transparency */
+  backdrop-filter: blur(10px); /* Apply a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.option-group {
+  margin-bottom: 70px; /* Add margin between option groups */
+}
+
+
+.options-container {
+  margin-top: -20px;
+}
+
+.options-container h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.option {
+  margin-bottom: 10px;
+
+}
+
+.option select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.option span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.shuffle-btn {
+  position: absolute;
+  bottom: 20px; /* Adjust distance from bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px; /* Increase border-radius for more curved edges */
+  padding: 10px 20px; /* Increase padding for a bigger button */
+  font-size: 1.2rem; /* Increase font size for bigger text */
+}
+

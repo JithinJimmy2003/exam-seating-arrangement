@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <head>  <!-- Other meta tags and stylesheets -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/exam-seating-arrangement/frontend/css/admin_home.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/exam-seating-arrangement/frontend/Images/prashant.png" alt="Profile Picture" class="profile-pic">
+        <div class="text-info">
+            <h1>Mr Prashant K Baby</h1>
+            <h2>TE1096</h2>
+            <h3>Department: CSE</h3>
+          </div>
+          <div id="date-time">
+            <div id="date"></div> <!-- Container for date -->
+            <div id="time"></div> <!-- Container for time -->
+          </div>
+    </div>
+
+    <div class="left-container">
+      <div class="date-options">
+        <h2>Choose Date</h2>
+        <div class="option">
+          <span>Choose Exam Date:</span>
+          <input type="date" id="exam-date" name="exam-date">
+        </div>
+      </div>
+    </div>
+
+    <div class="message-container">
+      <h2>Alert!</h2>
+      <div class="message">
+        <img src="/exam-seating-arrangement/frontend/Images/suni.png" alt="Profile Picture">
+        <div class="message-content">
+          <p><strong>Mrs. Suni Jose:</strong> has requested to reassign the exam duty to Mrs. Hima Jose.</p>
+        </div>
+      </div>
+      <div class="message-actions">
+        <button class="approve-btn">Approve</button>
+        <button class="reject-btn">Reject</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="main-content">
+
+      <div class="grid-container">
+          <!-- Row 1 -->
+          <div class="grid-item"><i class="fas fa-wheelchair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+      
+          <!-- Row 2 -->
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+
+
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          <div class="grid-item"><i class="fas fa-chair"></i></div>
+          
+      
+          <!-- Repeat rows 3 to 5 similarly -->
+      </div>
+
+      <div class="container">
+        <div class="options-container">
+          <h2>Generate</h2>
+          <div class="option-group">
+            <div class="option" id="department-options">
+            <span>Choose Department:</span>
+            <select name="department" id="department">
+              <option value="dept1">None</option>
+              <option value="dept1">CSE</option>
+              <option value="dept2">CE</option>
+              <option value="dept3">ME</option>
+              <option value="dept4">EEE</option>
+              <option value="dept5">EC</option>
+            </select>
+          </div>
+
+          <div class="option" id="semester-options">
+            <span>Choose Year:</span>
+            <select name="semester" id="semester">
+              <option value="">None</option>
+              <option value="sem1">First Year</option>
+              <option value="sem2">Second Year</option>
+              <option value="sem3">Third Year</option>
+              <option value="sem4">Fourth Year</option>
+            </select>
+          </div>
+        </div>
+          <!-- Add more options here if needed -->
+
+          <div class="option-group">
+            <div class="option" id="department-options">
+            <span>Choose Department:</span>
+            <select name="department" id="department">
+              <option value="dept1">None</option>
+              <option value="dept1">CSE</option>
+              <option value="dept2">CE</option>
+              <option value="dept3">ME</option>
+              <option value="dept4">EEE</option>
+              <option value="dept5">EC</option>
+            </select>
+          </div>
+
+          <div class="option" id="semester-options">
+            <span>Choose Year:</span>
+            <select name="semester" id="semester">
+              <option value="">None</option>
+              <option value="sem1">First Year</option>
+              <option value="sem2">Second Year</option>
+              <option value="sem3">Third Year</option>
+              <option value="sem4">Fourth Year</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="option" id="department-options">
+          <span>Choose Department:</span>
+          <select name="department" id="department">
+            <option value="dept1">None</option>
+            <option value="dept1">CSE</option>
+            <option value="dept2">CE</option>
+            <option value="dept3">ME</option>
+            <option value="dept4">EEE</option>
+            <option value="dept5">EC</option>
+          </select>
+        </div>
+
+        <div class="option" id="semester-options">
+          <span>Choose Year:</span>
+          <select name="semester" id="semester">
+            <option value="">None</option>
+            <option value="sem1">First Year</option>
+            <option value="sem2">Second Year</option>
+            <option value="sem3">Third Year</option>
+            <option value="sem4">Fourth Year</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="shuffle-btn">Shuffle</button>
+    </div>
+
+    <script src="/exam-seating-arrangement/frontend/admin_home/script.js"></script>
+</body>
+</html>
